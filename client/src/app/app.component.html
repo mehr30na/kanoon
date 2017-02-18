@@ -3,7 +3,12 @@
 </div>
 
 <div class="row">
-	<div class="col-md-2"><app-sidebar></app-sidebar></div>
-	<div class="col-md-10"><router-outlet></router-outlet></div>
+	<div class="col-md-2" style="padding: 0!important"><app-sidebar></app-sidebar></div>
+	<div class="col-md-10" style="padding: 0!important">
+		<div class="panel panel-info">
+			<div class="panel-heading text-center">{{panelHeading}}</div>
+			<div class="panel-body"><router-outlet></router-outlet></div>
+		</div>
+	</div>
 </div>
 
